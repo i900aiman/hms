@@ -29,7 +29,7 @@ func (sc *HealthAcitivityTrackerController) HealthAcitivityTracker(w http.Respon
 	if tokenStr == "" {
 		response := entities.APIResponse{
 			Status:  http.StatusUnauthorized,
-			Message: "Authorization token is required",
+			Message: "Authorization token is require",
 		}
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusUnauthorized)
